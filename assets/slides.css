@@ -32,7 +32,7 @@ body:not(.enhanced) .slide{border-bottom:1px solid var(--line)}
 .timeline li{background:#ffffffa8;border:1px solid #d9e4ef;border-radius:.65rem;padding:.62rem .8rem}
 .timeline b{color:var(--accent);margin-right:.4em;font-variant-numeric:tabular-nums}
 .pc{--era-image:url("bg-laptop.jpg");--accent:#174d9a;--tint:#e5efff}
-.sns{--era-image:url("bg-phone.jpg");--accent:#663b92;--tint:#f0e9fc}
+.sns{--era-image:url("bg-smartphone.jpg");--accent:#663b92;--tint:#f0e9fc}
 .ai{--era-image:url("bg-robot.jpg");--accent:#12665b;--tint:#dff4ee}
 .period{position:relative;isolation:isolate;background:#f5f8fd}
 .period::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,#f5f8fd 2%,#f5f8fdfa 29%,#f5f8fdf0 43%,#f5f8fd9e 67%,#f5f8fd56 100%),linear-gradient(0deg,#f5f8fd 0%,#f5f8fd5c 35%,#f5f8fd27 74%,#f5f8fd28 100%),var(--era-image);background-position:center,right center,right center;background-size:cover;background-repeat:no-repeat}
