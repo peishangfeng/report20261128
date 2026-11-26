@@ -79,3 +79,9 @@ body:not(.enhanced) .slide{border-bottom:1px solid var(--line)}
 }
 @media(max-height:650px) and (min-width:681px){.slide{padding-top:1rem;padding-bottom:1rem}.cover h1{font-size:clamp(2rem,5.8vw,4.7rem)}.period h2{font-size:clamp(2rem,4.4vw,4rem)}.lead{margin-top:.55rem}.grid{margin-top:.75rem}.grid article{padding:.7rem .93rem}}
 @media print{body{background:#fff;color:#000}.bar,.controls{display:none!important}.slide,.slide[hidden]{display:flex!important;min-height:0;break-after:page}.slide:last-child{break-after:auto}.cover,.period{background:#fff}.period::before{display:none}.grid article{box-shadow:none}.qr a{box-shadow:none}}
+
+/* Cover chapter previews reuse the images from the matching era slides. */
+.cover .timeline li{display:grid;align-content:start;gap:.45rem}
+.cover .timeline img{display:block;width:100%;height:clamp(6.2rem,15vh,9.7rem);object-fit:cover;object-position:77% 46%;border-radius:.45rem}
+@media(max-width:680px){.cover .timeline li{gap:.28rem}.cover .timeline img{height:clamp(3.65rem,17vw,6.4rem);object-position:right 45%;border-radius:.3rem}}
+@media(max-height:650px) and (min-width:681px){.cover .timeline{margin-top:1rem;padding-top:.65rem}.cover .timeline img{height:clamp(3.1rem,12vh,5.25rem)}}
