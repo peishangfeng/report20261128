@@ -20,8 +20,9 @@
     if (update || location.hash) window.scrollTo(0,0);
   }
   function readHash() {
-    const m = location.hash.match(/^#([1-4])$/);
-    show(m ? Number(m[1]) - 1 : 0);
+    const m = location.hash.match(/^#([1-9][0-9]*)$/);
+    const n = m ? Number(m[1]) : 0;
+    show(n >= 1 && n <= slides.length ? n - 1 : 0);
   }
   function fullscreen() {
     if (!document.fullscreenEnabled) return;
